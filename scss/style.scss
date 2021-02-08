@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Popins', sans-serif;
+  font-size: 62.5%;
+}
+
+// scroll top button
+.scroll-up-button {
+  position: fixed;
+  background-color: #006600;
+  width: 4.4rem;
+  height: 4.2rem;
+  right: 3rem;
+  bottom: 1rem;
+  text-align: center;
+  line-height: 4.5rem;
+  color: #FFF;
+  font-size: 3rem;
+  z-index: 9999;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-button.show {
+  bottom: 3rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+// Navbar styling
+.max-width {
+  display: flex;
+  max-width: 100%;
+  padding: 0 6rem;
+  margin: auto;
+}
+.navbar {
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+  &__max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin-right: -25px;
+  }
+  &__logo .sticky a {
+    color: #FFF;
+  }
+  &__logo a strong {
+    color: #FFF;
+  }
+  &__logo a {
+    color: #006600;
+    font-size: 2.5rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+  }
+  &__logo i {
+    color: #FFF;
+  }
+  &__menu li {
+    display: inline-block;
+    list-style: none;
+  }
+  &__menu li a {
+    display: block;
+    color: #FFF;
+    padding: 2px 15px;
+    font-size: 1.7rem;
+  }
+  &__menu li a:hover {
+    color: #006600;
+    transition: all 0.3s ease;
+  }
+  &__menu .sticky li a:hover {
+    color: #FFF;
+  }
+}
+
+// button mobile 
+.menu-mobile {
+  color: #FFF;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+// styling hero section
+.hero {
+  display: flex;
+  background-color: #001111;
+  height: 100vh;
+  color: #FFF;
+  &__max-width {
+    width: 100%;
+    display: inline-block;
+    padding-top: 6.5rem;
+  }
+  &__container {
+    width: 65%;
+    // display: flex;
+    display: inline-block;
+    padding-top: 0;
+  }
+  &__title {
+    font-size: 5rem;
+    margin-top: 5rem;
+    line-height: 7rem;
+    font-weight: 300;
+  }
+  &__title span {
+    color: #006600;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__button {
+    display: inline-block;
+    color:#FFF;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border: 1px solid #006600;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+  &__button:hover {
+    transform: scale(1.05);
+  }
+  &__image {
+    width: 25%;
+    display: inline-block;
+    align-items: flex-end;
+  }
+}
+
