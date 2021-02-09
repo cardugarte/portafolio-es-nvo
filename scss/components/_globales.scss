@@ -1,0 +1,75 @@
+// Variables de colores
+$color-primario: #006600;
+$color-secundario: #002220;
+$color-light: #fff;
+$color-dark: #001111;
+
+// Variables de fuentes
+$fuenteTitulos: "Popins", sans-serif;
+$fuenteTextos: "rubik", sans-serif;
+
+// General code
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: $fuenteTextos;
+  font-size: 62.5%;
+}
+
+// all similar content styling code
+.max-width {
+  display: flex;
+  max-width: 100%;
+  padding: 6rem;
+  margin: auto;
+}
+
+section {
+  padding: 5rem;
+  height: 100vh;
+  .title {
+    position: relative;
+    text-align: center;
+    font-family: $fuenteTitulos;
+    font-size: 4rem;
+    padding: 2rem;
+    margin: 4rem 0;
+  }
+  .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    height: 0.2rem;
+    background-color: $color-secundario;
+    transform: translateX(-50%);
+  }
+  .title::after {
+    position: absolute;
+    bottom: -1.2rem;
+    left: 50%;
+    font-size: 2rem;
+    color: $color-primario;
+    padding: 0.2rem;
+    background-color: $color-light;
+    transform: translateX(-50%);
+  }
+}
+
+.about__container,
+.projects__container,
+.contact__container,
+.foot__container {
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}

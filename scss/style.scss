@@ -1,27 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: 'Popins', sans-serif;
-  font-size: 62.5%;
-}
+@import "./components/globales";
 
 // scroll top button
 .scroll-up-button {
   position: fixed;
-  background-color: #006600;
   width: 4.4rem;
   height: 4.2rem;
   right: 3rem;
   bottom: 1rem;
   text-align: center;
   line-height: 4.5rem;
-  color: #FFF;
   font-size: 3rem;
   z-index: 9999;
   border-radius: 0.6rem;
@@ -29,6 +16,8 @@ html {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  background-color: $color-primario;
+  color: $color-light;
 }
 .scroll-up-button.show {
   bottom: 3rem;
@@ -37,12 +26,6 @@ html {
 }
 
 // Navbar styling
-.max-width {
-  display: flex;
-  max-width: 100%;
-  padding: 0 6rem;
-  margin: auto;
-}
 .navbar {
   padding: 30px 0;
   position: fixed;
@@ -53,24 +36,28 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
+    padding: 0 6rem;
+    margin: auto;
   }
   &__logo {
     margin-right: -25px;
   }
   &__logo .sticky a {
-    color: #FFF;
+    color: $color-light;
   }
   &__logo a strong {
-    color: #FFF;
+    font-size: 2.5rem;
+    color: $color-light;
   }
   &__logo a {
-    color: #006600;
     font-size: 2.5rem;
     font-weight: 300;
     transition: all 0.3s ease;
+    color: $color-primario;
   }
   &__logo i {
-    color: #FFF;
+    color: $color-light;
   }
   &__menu li {
     display: inline-block;
@@ -78,33 +65,34 @@ html {
   }
   &__menu li a {
     display: block;
-    color: #FFF;
     padding: 2px 15px;
     font-size: 1.7rem;
+    transition: all 0.3s ease;
+    color: $color-light;
   }
   &__menu li a:hover {
-    color: #006600;
-    transition: all 0.3s ease;
+    transform: scale(1.05);
+    color: $color-primario;
   }
   &__menu .sticky li a:hover {
-    color: #FFF;
+    color: $color-light;
   }
 }
 
-// button mobile 
+// button mobile
 .menu-mobile {
-  color: #FFF;
   font-size: 2rem;
   cursor: pointer;
   display: none;
+  color: $color-light;
 }
 
 // styling hero section
 .hero {
   display: flex;
-  background-color: #001111;
   height: 100vh;
-  color: #FFF;
+  color: $color-light;
+  background-color: $color-dark;
   &__max-width {
     width: 100%;
     display: inline-block;
@@ -112,7 +100,6 @@ html {
   }
   &__container {
     width: 65%;
-    // display: flex;
     display: inline-block;
     padding-top: 0;
   }
@@ -121,21 +108,27 @@ html {
     margin-top: 5rem;
     line-height: 7rem;
     font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-family: $fuenteTitulos;
   }
   &__title span {
-    color: #006600;
+    font-size: 5rem;
     font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: $color-primario;
   }
   &__button {
     display: inline-block;
-    color:#FFF;
     font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
     margin-top: 5rem;
     padding: 1rem 2rem;
-    border: 1px solid #006600;
     border-radius: 1rem;
     transition: all 0.3s ease;
+    color: $color-light;
+    border: 0.1rem solid $color-primario;
   }
   &__button:hover {
     transform: scale(1.05);
@@ -147,3 +140,50 @@ html {
   }
 }
 
+// About section styling
+.about {
+  .title::after {
+    content: "Un resumen de mi historia";
+  }
+  &__container {
+    .left {
+      width: 45%;
+    }
+    img {
+      height: 32rem;
+      width: 32rem;
+      border-radius: 20rem;
+      object-fit: cover;
+    }
+    .right {
+      width: 55%;
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        span {
+          color: $color-primario;
+        }
+      }
+      p {
+        text-align: justify;
+        line-height: 3rem;
+      }
+      a {
+        display: inline-block;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        margin-top: 3.5rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        border: 0.1rem solid $color-primario;
+        box-shadow: 1px 2px 3px $color-dark;
+        color: $color-secundario;
+      }
+      a:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
