@@ -54,8 +54,10 @@
               <img src="./assets/about-perfil.png" alt="avatar de perfil de Carlos">
             </div>
             <div class="column right">
-              <h2>Frontend developer</h2>
-              <p>Comencé esta aventura en el mundo de la tecnología desde que tenía 17 años, donde comencé a incursionar en lenguajes básicos como HTML y CSS diseñando un sitio web para una radio online que construí en ese momento. <br> Me considero una persona con grandes habilidades sociales y me encanta hablar en público, es una de mis pasiones además de la tecnología y la naturaleza. Me gusta leer libros de inteligencia emocional, inteligencia financiera, negocios y libros que hablan del futuro de la humanidad y como se ha encaminado al desarrollo tecnológico para resolver los problemas que enfrentamos en nuestro planeta.<br> Creo en las herramientas digitales como una oportunidad de crecimiento, desarrollo económico y profesional ante el mundo digital que vivimos hoy.</p>
+              <h2>Nómada Digital</h2>
+              <p>Nací en un lugar rodeado de montañas y buena vibra, habitado por gente increíble, servicial y educada. Eso es lo que más me gusta de Mérida la ciudad donde viví por 25 años.</p>
+              <p>Ahora vivo en Buenos Aires desde hace casi 5 años y me encanta. Su diversidad cultural y bicisendas son lo que más me hechiza de la ciudad de la furia como popularmente se conoce.</p>
+              <p>Me gusta conocer lugares nuevos y culturas distintas a la mía, pienso que es lo que nos hace tan diversos y nos da esa oportunidad de entender que el conocimiento es infinito y nunca hay que parar de aprender.</p>
               <a href="https://carlosdugarte.com/blog" target="_blank">visita mi blog</a>
             </div>
           </div>
@@ -65,11 +67,21 @@
       <!--projects section-->
       <section class="projects" id="projects">
         <h2 class="title">Proyectos</h2>
+        <p class="description">Conoce mis proyectos favoritos donde pongo a prueba mis conocimientos en tecnología. desarrollo mis habilidades técnicas a través de clonación de sitios webs algunas veces ayudo a mis amigos a diseñar sus sitios webs. Trabajo con WordPress y otras veces a base de preprocesadores de CSS como SASS o LESS. Mi lenguaje de programación favorito es Javascript, curioseo a REACT JS.</p>
         <div class="max-width">
           <div class="projects__container">
             <div class="projects__card">
               <div class="projects__box">
-                <i class="fab fa-code"></i>
+                <i class="fab fa-google"></i>
+                <h3>Google Clone</h3>
+                <p>En este proyecto descubrí muchas habilidades en CSS. Podría parecer que la home de Google es sencilla pero tiene algunos truquitos que pueden solucionar problemas interesantes en la maquetación de un sitio web.</p>
+                <a href="#">ver codigo</a>
+                <a href="#">ver sitio web</a>
+              </div>
+            </div>
+            <div class="projects__card">
+              <div class="projects__box">
+                <i class="fas fa-terminal"></i>
                 <h3>Google Clone</h3>
                 <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
                 <a href="#">ver codigo</a>
@@ -78,16 +90,7 @@
             </div>
             <div class="projects__card">
               <div class="projects__box">
-                <i class="fab fa-code"></i>
-                <h3>Google Clone</h3>
-                <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
-                <a href="#">ver codigo</a>
-                <a href="#">ver sitio web</a>
-              </div>
-            </div>
-            <div class="projects__card">
-              <div class="projects__box">
-                <i class="fab fa-code"></i>
+                <i class="fas fa-terminal"></i>
                 <h3>Google Clone</h3>
                 <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
                 <a href="#">ver codigo</a>
@@ -106,7 +109,7 @@
             <div class="column left">
               <h3 class="text">Trabajemos juntos</h3>
               <p>Me encanta recibir propuestas para desarrollar nuevos proyectos en equipo, si quieres comunicarte conmigo no dudes en escribir a través de los diferentes medios de contacto que tengo a continuación:</p>
-              <div class="contact_channels">
+              <div class="contact__channels">
                 <div class="row">
                   <i class="fab fa-telegram-plane"></i>
                   <a href="https://t.me/cardugarte" target="_blank">contáctame!</a>
@@ -120,29 +123,29 @@
                   <a href="https://www.linkedin.com/in/carlos-jesus-dugarte"  target="_blank">Escríbeme en LinkedIn</a>
                 </div>
               </div>
-              <div class="column right">
-                <h3 class="text">Envíame un mensaje</h3>
-                <form action="#">
-                  <div class="fields">
-                      <div class="field name">
-                          <input type="text" placeholder="Nombre" required>
-                      </div>
-                      <div class="field email">
-                          <input type="email" placeholder="Email" required>
-                      </div>
-                  </div>
-                  <div class="field">
-                      <input type="text" placeholder="Asunto" required>
-                  </div>
-                  <div class="field text-area">
-                      <textarea cols="30" rows="10" placeholder="Describe tu idea o proyecto..." required></textarea>
-                  </div>
-                  <div class="button">
-                      <button type="submit">Enviar mensaje!</button>
-                  </div>
-                  <p class="alert">*Sección en construcción, no disponible actualmente.</p>
-              </form>
-              </div>
+            </div>
+            <div class="column right">
+              <h3 class="text">Envíame un mensaje</h3>
+              <form action="#">
+                <div class="contact__fields">
+                    <div class="fields name">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="fields email">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="field subject">
+                    <input type="text" placeholder="Asunto" required>
+                </div>
+                <div class="field text-area">
+                    <textarea cols="30" rows="10" placeholder="Describe tu idea o proyecto..." required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar mensaje!</button>
+                </div>
+                <p class="alert">*Sección en construcción, no disponible actualmente.</p>
+            </form>
             </div>
           </div>
         </div>

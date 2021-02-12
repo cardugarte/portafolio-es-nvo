@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ html {
 
 section {
   padding: 5rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 section .title {
   position: relative;
@@ -29,7 +30,7 @@ section .title {
   font-family: "Popins", sans-serif;
   font-size: 4rem;
   padding: 2rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 section .title::before {
   content: "";
@@ -59,6 +60,13 @@ section .title::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero,
+.projects,
+.foot {
+  background-color: #001111;
+  color: #fff;
 }
 
 .scroll-up-button {
@@ -199,7 +207,10 @@ section .title::after {
 }
 
 .about .title::after {
-  content: "Un resumen de mi historia";
+  content: "Un resumen de mi historia 🧙🏽‍♂️";
+}
+.about h2 {
+  color: #002220;
 }
 .about__container .left {
   width: 45%;
@@ -218,12 +229,9 @@ section .title::after {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.about__container .right h2 span {
-  color: #006600;
-}
 .about__container .right p {
   text-align: justify;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 .about__container .right a {
   display: inline-block;
@@ -239,4 +247,160 @@ section .title::after {
 }
 .about__container .right a:hover {
   transform: scale(1.05);
+}
+
+.projects .title::after {
+  background-color: #001111;
+  content: "Experiencia profesional 🤝🏽";
+}
+.projects .title::before {
+  background-color: #fff;
+  color: #006600;
+}
+.projects .description {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+.projects__card {
+  max-width: calc(33% - 20px);
+  height: 420px;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1.5rem 3.5rem;
+  transition: all 0.3s ease;
+  background-color: #002220;
+}
+.projects__card:hover {
+  background-color: #006600;
+  transform: scale(1.05);
+}
+.projects__card:hover a {
+  transition: all 0.3s ease;
+  border-color: #002220;
+}
+.projects__card:hover h3 {
+  color: #002220;
+  transition: all 0.3s ease;
+}
+.projects__box i {
+  font-size: 6rem;
+  padding: 2rem;
+  color: #fff;
+}
+.projects__box h3 {
+  font-size: 2rem;
+  padding: 2rem;
+  color: #006600;
+}
+.projects__box p {
+  height: 150px;
+  padding: 1rem;
+}
+.projects__box a {
+  display: inline-block;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #006600;
+}
+.projects__box a:hover {
+  transform: scale(1.05);
+  color: #002220;
+}
+
+.contact .title::after {
+  content: "¿Hacemos equipo? 🙌🏽";
+}
+.contact h2,
+.contact h3 {
+  color: #002220;
+}
+.contact__container .left {
+  width: 45%;
+}
+.contact__container .text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.contact__container p {
+  text-align: justify;
+}
+.contact__container .row {
+  display: flex;
+  width: 20rem;
+  height: 4.5rem;
+  margin-top: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  border: 0.1rem solid #001111;
+  box-shadow: 1px 2px 3px #001111;
+}
+.contact__container .row:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.contact__container i {
+  padding: 0.3rem 0.8rem;
+  font-size: 2.5rem;
+  color: #002220;
+}
+.contact__container a {
+  display: inline-block;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: #002220;
+}
+.contact .right {
+  width: 50%;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid #002220;
+}
+.contact__fields {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__fields .name,
+.contact__fields .email {
+  width: 47%;
+}
+.contact__fields .subject,
+.contact__fields .text-area {
+  width: 100%;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  border: 0.1rem solid lightgray;
+  border-radius: 0.6rem;
+  outline: none;
+  resize: none;
+  font-family: "rubik", sans-serif;
+}
+.contact button {
+  padding: 1rem;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  color: #002220;
+  background-color: #fff;
+  border: 0.1rem solid #006600;
+  box-shadow: 1px 2px 3px #001111;
+}
+.contact button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.contact .alert {
+  text-align: center;
+  border-radius: 1rem;
+  color: #001111;
+  background-color: #0066005b;
 }

@@ -143,7 +143,10 @@
 // About section styling
 .about {
   .title::after {
-    content: "Un resumen de mi historia";
+    content: "Un resumen de mi historia 🧙🏽‍♂️";
+  }
+  h2 {
+    color: $color-secundario;
   }
   &__container {
     .left {
@@ -161,13 +164,10 @@
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        span {
-          color: $color-primario;
-        }
       }
       p {
         text-align: justify;
-        line-height: 3rem;
+        line-height: 2.5rem;
       }
       a {
         display: inline-block;
@@ -185,5 +185,174 @@
         transform: scale(1.05);
       }
     }
+  }
+}
+
+// Projects section Styling
+.projects {
+  .title::after {
+    background-color: $color-dark;
+    content: "Experiencia profesional 🤝🏽";
+  }
+  .title::before {
+    background-color: $color-light;
+    color: $color-primario;
+  }
+  .description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 2.5rem;
+  }
+  &__card {
+    max-width: calc(33% - 20px);
+    height: 420px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1.5rem 3.5rem;
+    transition: all 0.3s ease;
+    background-color: $color-secundario;
+  }
+  &__card:hover {
+    background-color: $color-primario;
+    transform: scale(1.05);
+    a {
+      transition: all 0.3s ease;
+      border-color: $color-secundario;
+    }
+    h3 {
+      color: $color-secundario;
+      transition: all 0.3s ease;
+    }
+  }
+  &__box {
+    i {
+      font-size: 6rem;
+      padding: 2rem;
+      color: $color-light;
+    }
+    h3 {
+      font-size: 2rem;
+      padding: 2rem;
+      color: $color-primario;
+    }
+    p {
+      height: 150px;
+      padding: 1rem;
+    }
+    a {
+      display: inline-block;
+      color: $color-light;
+      padding: 1rem;
+      margin: 1rem 1rem;
+      border-radius: 1rem;
+      border: 0.1rem solid $color-primario;
+    }
+    a:hover {
+      transform: scale(1.05);
+      color: $color-secundario;
+    }
+  }
+}
+
+// Contact section styling
+.contact {
+  .title::after {
+    content: "¿Hacemos equipo? 🙌🏽";
+  }
+  h2,
+  h3 {
+    color: $color-secundario;
+  }
+  &__container {
+    .left {
+      // width: calc(50% - 30px);
+      width: 45%;
+    }
+    .text {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+    p {
+      text-align: justify;
+    }
+    &__channels {
+    }
+    .row {
+      display: flex;
+      width: 20rem;
+      height: 4.5rem;
+      margin-top: 2rem;
+      align-items: center;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+      border: 0.1rem solid $color-dark;
+      box-shadow: 1px 2px 3px $color-dark;
+    }
+    .row:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    i {
+      padding: 0.3rem 0.8rem;
+      font-size: 2.5rem;
+      color: $color-secundario;
+    }
+    a {
+      display: inline-block;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      color: $color-secundario;
+    }
+  }
+  .right {
+    width: 50%;
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid $color-secundario;
+  }
+  &__fields {
+    display: flex;
+    justify-content: space-between;
+    .name,
+    .email {
+      width: 47%;
+    }
+    .subject,
+    .text-area {
+      width: 100%;
+    }
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.7rem 0;
+    border: 0.1rem solid lightgray;
+    border-radius: 0.6rem;
+    outline: none;
+    resize: none;
+    font-family: $fuenteTextos;
+  }
+  button {
+    padding: 1rem;
+    margin: 1rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    color: $color-secundario;
+    background-color: $color-light;
+    border: 0.1rem solid $color-primario;
+    box-shadow: 1px 2px 3px $color-dark;
+  }
+  button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .alert {
+    text-align: center;
+    border-radius: 1rem;
+    color: $color-dark;
+    background-color: #0066005b;
   }
 }
