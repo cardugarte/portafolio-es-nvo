@@ -1,0 +1,230 @@
+@media (max-width: 1350px) {
+  .projects__container {
+    display: flex;
+  }
+  .projects__card {
+    max-width: 30%;
+    height: 100%;
+  }
+  .projects__box p {
+    height: auto;
+  }
+  .projects__content {
+    min-height: 80%;
+  }
+  .projects__buttons {
+    min-height: 20%;
+  }
+}
+
+@media (max-width: 1039px) {
+  .hero img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 930px) {
+  .hero .max-width {
+    display: flex;
+  }
+  .hero img {
+    display: flex;
+  }
+  .projects__container {
+    display: inline;
+  }
+  .projects__card {
+    max-width: 100%;
+    height: 35rem;
+    margin: 2rem;
+  }
+  .contact__container {
+    display: inline;
+  }
+  .contact .contact__channels {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 879px) {
+  section .title::before {
+    width: 55%;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 70vh;
+    width: 100%;
+    max-width: 30rem;
+    right: -100%;
+    top: 0;
+    padding-top: 3.5rem;
+    background: #001111f8;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    right: 0;
+  }
+  .navbar .menu li {
+    display: block;
+    margin: 1rem 2rem;
+  }
+  .navbar .menu a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+  }
+  .cancel-btn i,
+  .menu-btn i {
+    display: block;
+    position: absolute;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+  }
+  .cancel-btn i {
+    right: 2rem;
+    top: 1rem;
+  }
+  .menu-btn.hide {
+    display: none;
+  }
+
+  .hero img {
+    display: none;
+  }
+  .hero__container {
+    width: 100%;
+  }
+  .hero__title .none {
+    display: none;
+  }
+  .hero__button {
+    margin-top: 13rem;
+  }
+  .about__container {
+    display: inline;
+  }
+  .about__container .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about__container .right {
+    width: 100%;
+  }
+  .about img {
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+  }
+  .foot__container {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .max-width {
+    padding: 0;
+  }
+  .hero__title,
+  .hero__title span {
+    font-size: 4rem;
+  }
+  .hero__title .typing {
+    padding: 3.5rem 0;
+  }
+  .about__container .right h2 {
+    margin: 3rem 0;
+  }
+  /* .about .title::after {
+    bottom: -3.5rem;
+  } */
+  .about img {
+    margin: 3rem;
+  }
+  section .title::before {
+    width: 65%;
+  }
+  section .title::after {
+    bottom: -4rem;
+  }
+  .projects .description {
+    padding-top: 5rem;
+    width: 100%;
+  }
+  .contact__container .text {
+    margin: 3rem;
+  }
+  .foot .foot__container {
+    display: inline-block;
+  }
+  .foot__by h3 {
+    text-align: center;
+  }
+  .foot .foot__icons {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  section {
+    padding: 1rem;
+  }
+  section .title::after {
+    bottom: -3.5rem;
+  }
+  .navbar__max-width {
+    margin: 1.5rem;
+  }
+  .nav__logo a {
+    font-size: 2rem;
+  }
+  .hero__title {
+    width: 100%;
+    text-align: center;
+    margin-left: 1.5rem;
+  }
+  .hero__title .typing {
+    font-size: 2.9rem;
+  }
+  .hero__title .none {
+    display: flex;
+  }
+  .hero__button {
+    text-align: center;
+    justify-content: center;
+    margin-left: 5rem;
+    display: flex;
+    padding: 2rem;
+  }
+  .about__container .right a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 50%;
+  }
+  .about img {
+    margin-top: 6rem;
+  }
+  .projects__card {
+    margin: 1.5rem 0;
+  }
+  .contact__container .button {
+    text-align: center;
+  }
+  .contact__container .text {
+    margin: 3rem 1rem 1.4rem;
+    text-align: center;
+  }
+  .foot__by h3 {
+    font-size: 1.4rem;
+  }
+}

@@ -8,27 +8,28 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <link rel="Stylesheet" href="./css/style.css">
+  <link rel="Stylesheet" media="(max-width: 1350px)" href="./css/movil.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   <script src="https://kit.fontawesome.com/6419f9160c.js"></script>
   <body>
-    <!--botón de scroll-->
-    <div class="scroll-up-button">
-      <i class="fas fa-angle-up"></i>
-  </div>
-
   <!--navbar-->
     <header class="navbar">
       <nav class="max-width navbar__max-width">
-        <div class="navbar__logo"><a href="#hero"><i class="fas fa-terminal"></i> carlos<strong>dugarte.com</strong></a></div>
-        <ul class="navbar__menu">
+        <div class="navbar__logo"><a href="#hero" class="logo"><i class="fas fa-terminal"></i> carlos<strong>dugarte.com</strong></a>
+        </div>
+        <ul class="navbar__menu menu">
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
           <li><a href="#about" class="menu-mobile">Conóceme</a></li>
           <li><a href="#projects" class="menu-mobile">Proyectos</a></li>
           <li><a href="#contact" class="menu-mobile">Contacto</a></li>
           <li><a href="https://carlosdugarte.com/blog" class="menu-mobile" target="_blank">Blog</a></li>
         </ul>
-        <div class="menu-mobile">
-          <i class="fas fa-bars"></i>
-        </div>
       </nav>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
 
     <main class="container"></main>
@@ -36,7 +37,7 @@
       <section class="hero" id="hero">
         <div class="max-width">
           <div class="hero__container">
-            <h1 class="hero__title">Hola, <br>soy Carlos Dugarte <br><span>Frontend Developer</span></h1>
+            <h1 class="hero__title">Hola, <br class="none">soy Carlos Dugarte <br><span class="typing"></span></h1>
             <a href="#contact" class="hero__button">Contáctame</a>
           </div>
           <div class="hero__image">
@@ -72,29 +73,41 @@
           <div class="projects__container">
             <div class="projects__card">
               <div class="projects__box">
-                <i class="fab fa-google"></i>
-                <h3>Google Clone</h3>
-                <p>En este proyecto descubrí muchas habilidades en CSS. Podría parecer que la home de Google es sencilla pero tiene algunos truquitos que pueden solucionar problemas interesantes en la maquetación de un sitio web.</p>
-                <a href="#">ver codigo</a>
-                <a href="#">ver sitio web</a>
+                <div class="projects__content">
+                  <i class="fab fa-google"></i>
+                  <h3>Google Clone</h3>
+                  <p>Para poner a prueba mis habilidades en CSS, hice un desafío de clonar la home de Google. Tiene algunos trucos interesantes.</p>
+                </div>
+                <div class="projects__buttons">
+                  <a href="#">ver codigo</a>
+                  <a href="#">ver sitio web</a>
+                </div>
               </div>
             </div>
             <div class="projects__card">
               <div class="projects__box">
-                <i class="fas fa-terminal"></i>
-                <h3>Google Clone</h3>
-                <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
-                <a href="#">ver codigo</a>
-                <a href="#">ver sitio web</a>
+                <div class="projects__content">
+                  <i class="fas fa-terminal"></i>
+                  <h3>Google Clone</h3>
+                  <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
+                </div>
+                <div class="projects__buttons">
+                  <a href="#">ver codigo</a>
+                  <a href="#">ver sitio web</a>
+                </div>
               </div>
             </div>
             <div class="projects__card">
               <div class="projects__box">
-                <i class="fas fa-terminal"></i>
-                <h3>Google Clone</h3>
-                <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
-                <a href="#">ver codigo</a>
-                <a href="#">ver sitio web</a>
+                <div class="projects__content">
+                  <i class="fas fa-terminal"></i>
+                  <h3>Google Clone</h3>
+                  <p>Es un proyecto de clon a la página principal del buscador de Google, donde pongo en práctica mis habilidades en HTML y CSS.</p>
+                </div>
+                <div class="projects__buttons">
+                  <a href="#">ver codigo</a>
+                  <a href="#">ver sitio web</a>
+                </div>
               </div>
             </div>
           </div>
@@ -112,15 +125,15 @@
               <div class="contact__channels">
                 <div class="row">
                   <i class="fab fa-telegram-plane"></i>
-                  <a href="https://t.me/cardugarte" target="_blank">contáctame!</a>
+                  <a href="https://t.me/cardugarte" target="_blank">Telegram</a>
                 </div>
                 <div class="row">
                   <i class="far fa-envelope"></i>
-                  <a href="mailto:contacto@carlosdugarte.com" target="_blank">Envíame un email</a>
+                  <a href="mailto:contacto@carlosdugarte.com" target="_blank">Email</a>
                 </div>
                 <div class="row">
                   <i class="fab fa-linkedin"></i>
-                  <a href="https://www.linkedin.com/in/carlos-jesus-dugarte"  target="_blank">Escríbeme en LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/carlos-jesus-dugarte"  target="_blank">LinkedIn</a>
                 </div>
               </div>
             </div>
@@ -139,7 +152,7 @@
                     <input type="text" placeholder="Asunto" required>
                 </div>
                 <div class="field text-area">
-                    <textarea cols="30" rows="10" placeholder="Describe tu idea o proyecto..." required></textarea>
+                    <textarea cols="30" rows="10" class="idea" placeholder="Describe tu idea o proyecto..." required></textarea>
                 </div>
                 <div class="button">
                     <button type="submit">Enviar mensaje!</button>
@@ -150,12 +163,18 @@
           </div>
         </div>
       </section>
+      <!--botón de scroll-->
+      <a href="#hero">
+        <div class="scroll-up-button">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      <a/>
     </main>
     <footer class="foot">
       <div class="max-width">
         <div class="foot__container">
           <div class="foot__by">
-            <h3>Creado con 💖 por Carlos Dugarte.</h3>
+            <h3>Creado con 💖 por <span>Carlos Dugarte</span></h3>
           </div>
           <div class="foot__icons">
             <a href="https://github.com/cardugarte" target="_blank" <i class="fab fa-github"></i> </a>
@@ -166,7 +185,7 @@
       </div>
     </footer>
 
-    <!--script-->
-
+    <!-- script -->
+<script src="./scripts/index.js" defer></script>
   </body>
 </html>
