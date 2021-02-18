@@ -59,13 +59,13 @@
     display: inline-block;
     list-style: none;
   }
-  &__menu li a {
+  &__menu li .menu-mobile {
     padding: 2px 15px;
     font-size: 2rem;
     transition: all 0.3s ease;
     color: $color-light;
   }
-  &__menu li a:hover {
+  &__menu li .menu-mobile:hover {
     transform: scale(1.05);
     color: $color-primario;
   }
@@ -73,10 +73,18 @@
 .navbar.sticky {
   padding: 2rem 0;
   background-color: $color-primario;
-  a {
+  .logo {
     color: $color-light;
   }
-  a:hover {
+  .fa-terminal {
+    color: $color-secundario;
+  }
+  li .menu-mobile {
+    transition: all 0.3s ease;
+    color: $color-light;
+  }
+  li .menu-mobile:hover {
+    transform: scale(1.05);
     color: $color-secundario;
   }
 }
@@ -127,6 +135,7 @@
     font-weight: 300;
     letter-spacing: 0.2rem;
     margin-top: 5rem;
+    margin-right: 2rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
     transition: all 0.3s ease;
@@ -135,6 +144,9 @@
   }
   &__button:hover {
     transform: scale(1.05);
+  }
+  &__pdf {
+    margin-left: 1rem;
   }
   &__image {
     width: 25%;
@@ -234,6 +246,9 @@
       padding: 2rem;
       color: $color-light;
     }
+    img {
+      padding: 2rem;
+    }
     h3 {
       font-size: 2rem;
       padding: 2rem;
@@ -269,13 +284,13 @@
   }
   &__container {
     .left {
-      // width: calc(50% - 30px);
       width: 45%;
     }
     .text {
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 3rem;
+      text-align: center;
     }
     p {
       text-align: justify;
@@ -342,6 +357,9 @@
   }
   .idea {
     height: 10rem;
+  }
+  .button {
+    text-align: center;
   }
   button {
     padding: 1rem;

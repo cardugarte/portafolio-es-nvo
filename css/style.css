@@ -128,13 +128,13 @@ section .title::after {
   display: inline-block;
   list-style: none;
 }
-.navbar__menu li a {
+.navbar__menu li .menu-mobile {
   padding: 2px 15px;
   font-size: 2rem;
   transition: all 0.3s ease;
   color: #fff;
 }
-.navbar__menu li a:hover {
+.navbar__menu li .menu-mobile:hover {
   transform: scale(1.05);
   color: #006600;
 }
@@ -143,10 +143,18 @@ section .title::after {
   padding: 2rem 0;
   background-color: #006600;
 }
-.navbar.sticky a {
+.navbar.sticky .logo {
   color: #fff;
 }
-.navbar.sticky a:hover {
+.navbar.sticky .fa-terminal {
+  color: #002220;
+}
+.navbar.sticky li .menu-mobile {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.navbar.sticky li .menu-mobile:hover {
+  transform: scale(1.05);
   color: #002220;
 }
 
@@ -195,6 +203,7 @@ section .title::after {
   font-weight: 300;
   letter-spacing: 0.2rem;
   margin-top: 5rem;
+  margin-right: 2rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
@@ -203,6 +212,9 @@ section .title::after {
 }
 .hero__button:hover {
   transform: scale(1.05);
+}
+.hero__pdf {
+  margin-left: 1rem;
 }
 .hero__image {
   width: 25%;
@@ -293,6 +305,9 @@ section .title::after {
   padding: 2rem;
   color: #fff;
 }
+.projects__box img {
+  padding: 2rem;
+}
 .projects__box h3 {
   font-size: 2rem;
   padding: 2rem;
@@ -329,6 +344,7 @@ section .title::after {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
+  text-align: center;
 }
 .contact__container p {
   text-align: justify;
@@ -393,6 +409,9 @@ section .title::after {
 }
 .contact .idea {
   height: 10rem;
+}
+.contact .button {
+  text-align: center;
 }
 .contact button {
   padding: 1rem;
