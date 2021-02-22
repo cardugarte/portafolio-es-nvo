@@ -1,0 +1,72 @@
+// Navbar styling
+.navbar {
+  position: fixed;
+  padding: 30px 0;
+  width: 100%;
+  z-index: 5;
+  transition: all 0.3s ease;
+  &__max-width {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 6rem;
+    margin: auto;
+  }
+  &__logo {
+    margin-right: -25px;
+  }
+  &__logo a strong {
+    font-size: 2.5rem;
+    color: $color-light;
+  }
+  &__logo a {
+    font-size: 2.5rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    color: $color-primario;
+  }
+  &__logo i {
+    color: $color-light;
+  }
+  &__menu li {
+    display: inline-block;
+    list-style: none;
+  }
+  &__menu li .menu-mobile {
+    padding: 2px 15px;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    color: $color-light;
+  }
+  &__menu li .menu-mobile:hover {
+    transform: scale(1.05);
+    color: $color-primario;
+  }
+}
+.navbar.sticky {
+  padding: 2rem 0;
+  background-color: $color-primario;
+  .logo {
+    color: $color-light;
+  }
+  .fa-terminal {
+    color: $color-secundario;
+  }
+  li .menu-mobile {
+    transition: all 0.3s ease;
+    color: $color-light;
+  }
+  li .menu-mobile:hover {
+    transform: scale(1.05);
+    color: $color-secundario;
+  }
+}
+
+// button mobile
+.cancel-btn i,
+.menu-btn i {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  color: $color-light;
+}

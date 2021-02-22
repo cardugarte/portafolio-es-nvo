@@ -23,6 +23,31 @@ html {
   font-size: 62.5%;
 }
 
+// scroll top button
+.scroll-up-button {
+  position: fixed;
+  width: 4.4rem;
+  height: 4.2rem;
+  right: 3rem;
+  bottom: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 3.5rem;
+  z-index: 9999;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: $color-primario;
+  color: $color-light;
+}
+.scroll-up-button.show {
+  bottom: 3rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 // all similar content styling code
 .max-width {
   display: flex;

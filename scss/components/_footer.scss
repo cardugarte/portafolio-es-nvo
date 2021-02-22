@@ -1,0 +1,30 @@
+.foot {
+  .max-width {
+    padding: 2rem;
+  }
+  &__container {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .fab {
+      display: inline-block;
+      font-size: 3.5rem;
+      margin: 1rem;
+      transition: all 0.3s ease;
+      color: $color-light;
+    }
+    .fab:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__by {
+    h3 {
+      letter-spacing: 0.1rem;
+      span {
+        color: $color-primario;
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "rubik", sans-serif;
+  font-size: 62.5%;
+}
+
+.scroll-up-button {
+  position: fixed;
+  width: 4.4rem;
+  height: 4.2rem;
+  right: 3rem;
+  bottom: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 3.5rem;
+  z-index: 9999;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background-color: #006600;
+  color: #fff;
+}
+
+.scroll-up-button.show {
+  bottom: 3rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.max-width {
+  display: flex;
+  max-width: 100%;
+  padding: 6rem;
+  margin: auto;
+}
+
+section {
+  padding: 5rem;
+  min-height: 100vh;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-family: "Popins", sans-serif;
+  font-size: 4rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30%;
+  height: 0.2rem;
+  background-color: #002220;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 50%;
+  font-size: 2rem;
+  color: #006600;
+  padding: 0.2rem;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.about__container,
+.projects__container,
+.contact__container,
+.foot__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero,
+.projects,
+.foot {
+  background-color: #001111;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  padding: 30px 0;
+  width: 100%;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+.navbar__max-width {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 6rem;
+  margin: auto;
+}
+.navbar__logo {
+  margin-right: -25px;
+}
+.navbar__logo a strong {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.navbar__logo a {
+  font-size: 2.5rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  color: #006600;
+}
+.navbar__logo i {
+  color: #fff;
+}
+.navbar__menu li {
+  display: inline-block;
+  list-style: none;
+}
+.navbar__menu li .menu-mobile {
+  padding: 2px 15px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.navbar__menu li .menu-mobile:hover {
+  transform: scale(1.05);
+  color: #006600;
+}
+
+.navbar.sticky {
+  padding: 2rem 0;
+  background-color: #006600;
+}
+.navbar.sticky .logo {
+  color: #fff;
+}
+.navbar.sticky .fa-terminal {
+  color: #002220;
+}
+.navbar.sticky li .menu-mobile {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.navbar.sticky li .menu-mobile:hover {
+  transform: scale(1.05);
+  color: #002220;
+}
+
+.cancel-btn i,
+.menu-btn i {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+}
+
+.foot .max-width {
+  padding: 2rem;
+}
+.foot__container {
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot__container .fab {
+  display: inline-block;
+  font-size: 3.5rem;
+  margin: 1rem;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.foot__container .fab:hover {
+  transform: scale(1.05);
+}
+.foot__by h3 {
+  letter-spacing: 0.1rem;
+}
+.foot__by h3 span {
+  color: #006600;
+}

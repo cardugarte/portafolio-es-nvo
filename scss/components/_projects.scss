@@ -1,0 +1,68 @@
+.projects {
+  .title::after {
+    background-color: $color-dark;
+    content: "Experiencia profesional 🤝🏽";
+  }
+  .title::before {
+    background-color: $color-light;
+    color: $color-primario;
+  }
+  .description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 2.5rem;
+  }
+  &__card {
+    max-width: calc(33% - 20px);
+    height: 420px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1.5rem 3.5rem;
+    transition: all 0.3s ease;
+    background-color: $color-secundario;
+  }
+  &__card:hover {
+    background-color: $color-primario;
+    transform: scale(1.05);
+    a {
+      transition: all 0.3s ease;
+      border-color: $color-secundario;
+    }
+    h3 {
+      color: $color-secundario;
+      transition: all 0.3s ease;
+    }
+  }
+  &__box {
+    i {
+      font-size: 6rem;
+      padding: 2rem;
+      color: $color-light;
+    }
+    img {
+      padding: 2rem;
+    }
+    h3 {
+      font-size: 2rem;
+      padding: 2rem;
+      color: $color-primario;
+    }
+    p {
+      height: 150px;
+      padding: 1rem;
+    }
+    a {
+      display: inline-block;
+      color: $color-light;
+      padding: 1rem;
+      margin: 1rem 1rem;
+      border-radius: 1rem;
+      border: 0.1rem solid $color-primario;
+    }
+    a:hover {
+      transform: scale(1.05);
+      color: $color-secundario;
+    }
+  }
+}
