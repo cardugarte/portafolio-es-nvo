@@ -1,0 +1,192 @@
+@media (max-width: 320px) {
+  section {
+    padding: 10px;
+  }
+  section .title::before {
+    width: 70%;
+  }
+
+  .max-width {
+    padding: 5px;
+  }
+  /* Navbar */
+  .navbar {
+    padding: 15px;
+  }
+  .navbar__max-width {
+    padding: 0 2px;
+  }
+  .navbar__logo a,
+  .navbar__logo a strong {
+    font-size: 2.3rem;
+  }
+  .navbar.sticky {
+    padding: 10px 10px;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 55vh;
+    width: 70%;
+    right: -100%;
+    top: 0;
+    padding-top: 33px;
+    background: #001111f8;
+    display: block;
+    text-align: left;
+    box-shadow: 1px 2px 3px #001111;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    right: 0;
+  }
+  .navbar .menu li {
+    display: block;
+    margin: 10px 20px;
+  }
+  .navbar .menu a {
+    display: inline-block;
+    padding: 10px 2px;
+    font-size: 2.5rem;
+  }
+  .cancel-btn i,
+  .menu-btn i {
+    display: block;
+    position: absolute;
+  }
+  .menu-btn .fa-bars {
+    position: absolute;
+    top: 1px;
+  }
+  .sticky .menu-btn .fa-bars::before {
+    position: absolute;
+    top: -6px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+  }
+  .cancel-btn i {
+    right: 20px;
+    top: 10px;
+  }
+  .menu-btn.hide {
+    display: none;
+  }
+}
+/* Hero */
+.hero {
+  padding: 0;
+}
+.hero .max-width {
+  padding: 30px;
+}
+
+.hero__container {
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 2rem;
+}
+
+.hero__title span {
+  font-size: 2.5rem;
+}
+
+.hero img {
+  display: none;
+}
+
+.hero__button {
+  margin: 20px 48px;
+  min-width: 170px;
+}
+
+/* About */
+.about__container {
+  display: inline;
+}
+.about__container .left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about__container .right {
+  width: 100%;
+}
+.about .right a {
+  min-width: 170px;
+}
+.about .title::after {
+  top: 65px;
+}
+.about img {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+/* Projects */
+.projects .title::after {
+  bottom: -33px;
+}
+.projects .description {
+  width: 95%;
+  margin-top: 40px;
+}
+.projects .projects__container {
+  display: inline-block;
+}
+
+.projects__container .projects__card {
+  max-width: 100%;
+  min-height: 450px;
+  margin: 15px 0;
+}
+
+/* contact */
+.contact .title::after {
+  bottom: -31px;
+}
+.contact .contact__container {
+  display: inline-block;
+  width: 100%;
+}
+.contact__container .left {
+  width: 100%;
+}
+.contact__container .text {
+  margin-top: 20px;
+}
+
+.contact__channels {
+  display: inline-block;
+  text-align: center;
+}
+
+.contact__channels .row {
+  width: 250px;
+}
+.contact__container .right {
+  width: 100%;
+}
+
+.right .contact__fields {
+  display: inline-block;
+  width: 100%;
+}
+.right .contact__fields .fields {
+  width: 100%;
+}
+
+/* Footer */
+.foot .foot__container {
+  display: inline-block;
+  text-align: center;
+}
+.foot__by h3,
+.foot__by span {
+  font-size: 1.5rem;
+}
