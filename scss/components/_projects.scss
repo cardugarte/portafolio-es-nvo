@@ -14,8 +14,9 @@
     line-height: 2.5rem;
   }
   &__card {
-    max-width: calc(33% - 20px);
-    height: 420px;
+    max-width: calc(33% - 10px);
+    min-height: 450px;
+    height: auto;
     text-align: center;
     border-radius: 1rem;
     padding: 1.5rem 3.5rem;

@@ -1,14 +1,32 @@
-@media (max-width: 320px) {
-  section {
-    padding: 10px;
+@media (max-width: 1024px) {
+  .about .max-width {
+    padding: 60px 10px;
   }
-  section .title::before {
-    width: 70%;
+  .projects .max-width {
+    padding: 25px 0;
   }
 
-  .max-width {
-    padding: 5px;
+  .projects .projects__card {
+    max-width: calc(33% - 10px);
+    min-height: 500px;
   }
+
+  .contact,
+  .contact .max-width {
+    padding: 60px 20px;
+  }
+
+  .contact__container .left {
+    width: 49%;
+    height: 400px;
+  }
+
+  .left .contact__channels {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 960px) {
   /* Navbar */
   .navbar {
     padding: 15px;
@@ -74,119 +92,221 @@
     display: none;
   }
 }
-/* Hero */
-.hero {
-  padding: 0;
-}
-.hero .max-width {
-  padding: 30px;
+
+@media (max-width: 768px) {
+  section .title::before {
+    width: 50%;
+  }
+
+  .hero img {
+    width: 250px;
+  }
+
+  .hero__button {
+    display: inline-block;
+    font-size: 15px;
+  }
+
+  .about .max-width {
+    padding: 5px;
+  }
+
+  .about img {
+    width: 250px;
+  }
+
+  .projects .description {
+    width: 90%;
+  }
+
+  .projects .max-width {
+    padding: 25px 5px;
+  }
+
+  .projects .projects__container {
+    display: inline-block;
+  }
+
+  .projects .projects__card {
+    max-width: 100%;
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  .contact .contact__container {
+    display: inline-block;
+  }
+
+  .contact .max-width {
+    padding: 15px 0;
+  }
+
+  .contact__container .left,
+  .contact__container .right {
+    width: 100%;
+  }
+
+  .contact .contact__channels {
+    text-align: center;
+  }
+
+  .foot .foot__icons {
+    margin-right: 25px;
+  }
 }
 
-.hero__container {
-  width: 100%;
+@media (max-width: 425px) {
+  section {
+    padding: 10px;
+  }
+  section .title::before {
+    width: 70%;
+  }
+
+  .max-width {
+    padding: 5px;
+  }
+  /* Hero */
+  .hero {
+    padding: 0;
+  }
+  .hero .max-width {
+    padding: 30px;
+  }
+
+  .hero__container {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .hero__title span {
+    font-size: 2.7rem;
+  }
+
+  .hero__image {
+    width: 0;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero__button {
+    margin: 20px 100px;
+    min-width: 170px;
+  }
+
+  /* About */
+  .about__container {
+    display: inline;
+  }
+  .about__container .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about__container .right {
+    width: 100%;
+  }
+  .about .right a {
+    min-width: 170px;
+  }
+  .about .title::after {
+    top: 70px;
+  }
+  .about img {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  /* Projects */
+  .projects .title::after {
+    bottom: -33px;
+  }
+  .projects .description {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .projects .projects__container {
+    display: inline-block;
+  }
+
+  .projects__container .projects__card {
+    max-width: 100%;
+    min-height: 450px;
+    margin: 15px 0;
+  }
+
+  /* contact */
+  .contact .title::after {
+    bottom: -31px;
+  }
+  .contact .contact__container {
+    display: inline-block;
+    width: 100%;
+  }
+  .contact__container .left {
+    width: 100%;
+  }
+  .contact__container .text {
+    margin-top: 20px;
+  }
+
+  .left .contact__channels {
+    margin-top: 1px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .contact__channels .row {
+    width: 250px;
+  }
+  .contact__container .right {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .right .contact__fields {
+    display: inline-block;
+    width: 100%;
+  }
+  .right .contact__fields .fields {
+    width: 100%;
+  }
+
+  /* Footer */
+  .foot .foot__container {
+    display: inline-block;
+    text-align: center;
+  }
+  .foot__by h3,
+  .foot__by span {
+    font-size: 1.5rem;
+  }
 }
 
-.hero__title {
-  font-size: 2rem;
+@media (max-width: 375px) {
+  .hero__button {
+    margin: 20px 75px;
+  }
 }
 
-.hero__title span {
-  font-size: 2.5rem;
-}
+@media (max-width: 320px) {
+  .hero__title {
+    font-size: 2rem;
+  }
 
-.hero img {
-  display: none;
-}
+  .hero__title span {
+    font-size: 2.5rem;
+  }
 
-.hero__button {
-  margin: 20px 48px;
-  min-width: 170px;
-}
-
-/* About */
-.about__container {
-  display: inline;
-}
-.about__container .left {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.about__container .right {
-  width: 100%;
-}
-.about .right a {
-  min-width: 170px;
-}
-.about .title::after {
-  top: 65px;
-}
-.about img {
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-}
-
-/* Projects */
-.projects .title::after {
-  bottom: -33px;
-}
-.projects .description {
-  width: 95%;
-  margin-top: 40px;
-}
-.projects .projects__container {
-  display: inline-block;
-}
-
-.projects__container .projects__card {
-  max-width: 100%;
-  min-height: 450px;
-  margin: 15px 0;
-}
-
-/* contact */
-.contact .title::after {
-  bottom: -31px;
-}
-.contact .contact__container {
-  display: inline-block;
-  width: 100%;
-}
-.contact__container .left {
-  width: 100%;
-}
-.contact__container .text {
-  margin-top: 20px;
-}
-
-.contact__channels {
-  display: inline-block;
-  text-align: center;
-}
-
-.contact__channels .row {
-  width: 250px;
-}
-.contact__container .right {
-  width: 100%;
-}
-
-.right .contact__fields {
-  display: inline-block;
-  width: 100%;
-}
-.right .contact__fields .fields {
-  width: 100%;
-}
-
-/* Footer */
-.foot .foot__container {
-  display: inline-block;
-  text-align: center;
-}
-.foot__by h3,
-.foot__by span {
-  font-size: 1.5rem;
+  .hero__button {
+    margin: 20px 48px;
+  }
 }
