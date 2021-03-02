@@ -26,15 +26,15 @@ html {
 // scroll top button
 .scroll-up-button {
   position: fixed;
-  width: 4.4rem;
-  height: 4.2rem;
-  right: 3rem;
-  bottom: 1rem;
+  width: 44px;
+  height: 42px;
+  right: 30px;
+  bottom: 10px;
   text-align: center;
   line-height: 3rem;
   font-size: 3.5rem;
   z-index: 9999;
-  border-radius: 0.6rem;
+  border-radius: 6px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -43,7 +43,7 @@ html {
   color: $color-light;
 }
 .scroll-up-button.show {
-  bottom: 3rem;
+  bottom: 30px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -52,20 +52,20 @@ html {
 .max-width {
   display: flex;
   max-width: 100%;
-  padding: 6rem;
+  padding: 60px;
   margin: auto;
 }
 
 section {
-  padding: 5rem;
+  padding: 50px;
   min-height: 100vh;
   .title {
     position: relative;
     text-align: center;
     font-family: $fuenteTitulos;
     font-size: 4rem;
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 20px;
+    margin: 20px 0;
   }
   .title::before {
     content: "";
@@ -83,7 +83,7 @@ section {
     left: 50%;
     font-size: 2rem;
     color: $color-primario;
-    padding: 0.2rem;
+    padding: 2px;
     background-color: $color-light;
     transform: translateX(-50%);
   }

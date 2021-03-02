@@ -1,6 +1,6 @@
 .foot {
   .max-width {
-    padding: 2rem;
+    padding: 20px;
   }
   &__container {
     display: flex;
@@ -11,7 +11,7 @@
     .fab {
       display: inline-block;
       font-size: 3.5rem;
-      margin: 1rem;
+      margin: 10px;
       transition: all 0.3s ease;
       color: $color-light;
     }

@@ -6,7 +6,7 @@
   &__max-width {
     width: 100%;
     display: inline-block;
-    padding-top: 6.5rem;
+    padding-top: 65px;
   }
   &__container {
     width: 65%;
@@ -15,7 +15,7 @@
   }
   &__title {
     font-size: 5rem;
-    margin-top: 5rem;
+    margin-top: 50px;
     line-height: 7rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
@@ -28,15 +28,19 @@
     letter-spacing: 0.2rem;
     color: $color-primario;
   }
-  &__button {
+  &__button--container {
     display: inline-block;
+    width: 100%;
+    margin-top: 60px;
+  }
+  &__button {
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
-    margin-top: 5rem;
-    margin-right: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
     transition: all 0.3s ease;
     color: $color-light;
     border: 0.1rem solid $color-primario;
@@ -45,7 +49,7 @@
     transform: scale(1.05);
   }
   &__pdf {
-    margin-left: 1rem;
+    margin-left: 10px;
   }
   &__image {
     width: 25%;

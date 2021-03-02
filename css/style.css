@@ -15,15 +15,15 @@ html {
 
 .scroll-up-button {
   position: fixed;
-  width: 4.4rem;
-  height: 4.2rem;
-  right: 3rem;
-  bottom: 1rem;
+  width: 44px;
+  height: 42px;
+  right: 30px;
+  bottom: 10px;
   text-align: center;
   line-height: 3rem;
   font-size: 3.5rem;
   z-index: 9999;
-  border-radius: 0.6rem;
+  border-radius: 6px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -33,7 +33,7 @@ html {
 }
 
 .scroll-up-button.show {
-  bottom: 3rem;
+  bottom: 30px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -41,12 +41,12 @@ html {
 .max-width {
   display: flex;
   max-width: 100%;
-  padding: 6rem;
+  padding: 60px;
   margin: auto;
 }
 
 section {
-  padding: 5rem;
+  padding: 50px;
   min-height: 100vh;
 }
 section .title {
@@ -54,8 +54,8 @@ section .title {
   text-align: center;
   font-family: "Popins", sans-serif;
   font-size: 4rem;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 20px;
+  margin: 20px 0;
 }
 section .title::before {
   content: "";
@@ -73,7 +73,7 @@ section .title::after {
   left: 50%;
   font-size: 2rem;
   color: #006600;
-  padding: 0.2rem;
+  padding: 2px;
   background-color: #fff;
   transform: translateX(-50%);
 }
@@ -105,7 +105,7 @@ section .title::after {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  padding: 0 6rem;
+  padding: 0 60px;
   margin: auto;
 }
 .navbar__logo {
@@ -140,7 +140,7 @@ section .title::after {
 }
 
 .navbar.sticky {
-  padding: 2rem 0;
+  padding: 20px 0;
   background-color: #006600;
 }
 .navbar.sticky .logo {
@@ -175,7 +175,7 @@ section .title::after {
 .hero__max-width {
   width: 100%;
   display: inline-block;
-  padding-top: 6.5rem;
+  padding-top: 65px;
 }
 .hero__container {
   width: 65%;
@@ -184,7 +184,7 @@ section .title::after {
 }
 .hero__title {
   font-size: 5rem;
-  margin-top: 5rem;
+  margin-top: 50px;
   line-height: 7rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -197,15 +197,19 @@ section .title::after {
   letter-spacing: 0.2rem;
   color: #006600;
 }
-.hero__button {
+.hero__button--container {
   display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+}
+.hero__button {
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
-  margin-top: 5rem;
-  margin-right: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
+  margin-top: 50px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   color: #fff;
   border: 0.1rem solid #006600;
@@ -214,7 +218,7 @@ section .title::after {
   transform: scale(1.05);
 }
 .hero__pdf {
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 .hero__image {
   width: 25%;
@@ -232,9 +236,9 @@ section .title::after {
   width: 45%;
 }
 .about__container img {
-  height: 32rem;
-  width: 32rem;
-  border-radius: 20rem;
+  height: 320px;
+  width: 320px;
+  border-radius: 200px;
   object-fit: cover;
 }
 .about__container .right {
@@ -243,7 +247,12 @@ section .title::after {
 .about__container .right h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+}
+.about__container .right .about__resumen {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #001111;
+          text-decoration-color: #001111;
 }
 .about__container .right p {
   text-align: justify;
@@ -253,9 +262,9 @@ section .title::after {
   display: inline-block;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  margin-top: 3.5rem;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
+  margin-top: 35px;
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   border: 0.1rem solid #006600;
   box-shadow: 1px 2px 3px #001111;
@@ -281,10 +290,10 @@ section .title::after {
 }
 .projects__card {
   max-width: calc(33% - 20px);
-  height: 420px;
+  height: 450px;
   text-align: center;
-  border-radius: 1rem;
-  padding: 1.5rem 3.5rem;
+  border-radius: 10px;
+  padding: 15px 35px;
   transition: all 0.3s ease;
   background-color: #002220;
 }
@@ -302,27 +311,27 @@ section .title::after {
 }
 .projects__box i {
   font-size: 6rem;
-  padding: 2rem;
+  padding: 20px;
   color: #fff;
 }
 .projects__box img {
-  padding: 2rem;
+  padding: 20px;
 }
 .projects__box h3 {
   font-size: 2rem;
-  padding: 2rem;
+  padding: 20px;
   color: #006600;
 }
 .projects__box p {
   height: 150px;
-  padding: 1rem;
+  padding: 10px;
 }
 .projects__box a {
   display: inline-block;
   color: #fff;
-  padding: 1rem;
-  margin: 1rem 1rem;
-  border-radius: 1rem;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
   border: 0.1rem solid #006600;
 }
 .projects__box a:hover {
@@ -399,24 +408,24 @@ section .title::after {
 .contact input,
 .contact textarea {
   width: 100%;
-  padding: 1rem;
-  margin: 0.7rem 0;
-  border: 0.1rem solid lightgray;
+  padding: 10px;
+  margin: 7px 0;
+  border: 1px solid lightgray;
   border-radius: 0.6rem;
   outline: none;
   resize: none;
   font-family: "rubik", sans-serif;
 }
 .contact .idea {
-  height: 10rem;
+  height: 100px;
 }
 .contact .button {
   text-align: center;
 }
 .contact button {
-  padding: 1rem;
-  margin: 1rem 1rem;
-  border-radius: 1rem;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
   transition: all 0.3s ease;
   color: #002220;
   background-color: #fff;
@@ -429,13 +438,13 @@ section .title::after {
 }
 .contact .alert {
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 10px;
   color: #001111;
   background-color: #0066005b;
 }
 
 .foot .max-width {
-  padding: 2rem;
+  padding: 20px;
 }
 .foot__container {
   display: flex;
@@ -447,7 +456,7 @@ section .title::after {
 .foot__container .fab {
   display: inline-block;
   font-size: 3.5rem;
-  margin: 1rem;
+  margin: 10px;
   transition: all 0.3s ease;
   color: #fff;
 }

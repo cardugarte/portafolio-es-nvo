@@ -10,9 +10,9 @@
       width: 45%;
     }
     img {
-      height: 32rem;
-      width: 32rem;
-      border-radius: 20rem;
+      height: 320px;
+      width: 320px;
+      border-radius: 200px;
       object-fit: cover;
     }
     .right {
@@ -20,7 +20,11 @@
       h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 10px;
+      }
+      .about__resumen {
+        text-decoration: underline;
+        text-decoration-color: $color-dark;
       }
       p {
         text-align: justify;
@@ -30,9 +34,9 @@
         display: inline-block;
         font-size: 1.8rem;
         letter-spacing: 0.1rem;
-        margin-top: 3.5rem;
-        padding: 1rem 2rem;
-        border-radius: 1rem;
+        margin-top: 35px;
+        padding: 10px 20px;
+        border-radius: 10px;
         transition: all 0.3s ease;
         border: 0.1rem solid $color-primario;
         box-shadow: 1px 2px 3px $color-dark;

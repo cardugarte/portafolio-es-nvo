@@ -71,24 +71,24 @@
   input,
   textarea {
     width: 100%;
-    padding: 1rem;
-    margin: 0.7rem 0;
-    border: 0.1rem solid lightgray;
+    padding: 10px;
+    margin: 7px 0;
+    border: 1px solid lightgray;
     border-radius: 0.6rem;
     outline: none;
     resize: none;
     font-family: $fuenteTextos;
   }
   .idea {
-    height: 10rem;
+    height: 100px;
   }
   .button {
     text-align: center;
   }
   button {
-    padding: 1rem;
-    margin: 1rem 1rem;
-    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
     transition: all 0.3s ease;
     color: $color-secundario;
     background-color: $color-light;
@@ -101,7 +101,7 @@
   }
   .alert {
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 10px;
     color: $color-dark;
     background-color: #0066005b;
   }

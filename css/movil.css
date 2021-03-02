@@ -24,6 +24,9 @@
 }
 
 @media (max-width: 930px) {
+  section {
+    padding: 15px;
+  }
   .hero .max-width {
     display: flex;
   }
@@ -35,8 +38,8 @@
   }
   .projects__card {
     max-width: 100%;
-    height: 39rem;
-    margin: 2rem;
+    height: 370px;
+    margin: 20px;
   }
   .contact__container {
     display: inline;
@@ -96,7 +99,6 @@
   .menu-btn.hide {
     display: none;
   }
-
   .hero img {
     display: none;
   }
@@ -104,6 +106,9 @@
     width: 100%;
   }
   .hero__title .none {
+    display: none;
+  }
+  .hero__image {
     display: none;
   }
   .hero__button {
@@ -125,6 +130,9 @@
     width: 20rem;
     height: 20rem;
   }
+  .projects__card {
+    height: 445px;
+  }
   .foot__container {
     width: 90%;
   }
@@ -143,9 +151,6 @@
   .about__container .right h2 {
     margin: 3rem 0;
   }
-  /* .about .title::after {
-    bottom: -3.5rem;
-  } */
   .about img {
     margin: 3rem;
   }
@@ -173,6 +178,22 @@
     text-align: center;
   }
 }
+@media (max-width: 470px) {
+  .hero__button--container {
+    margin-top: 10px;
+  }
+  .hero__button {
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    padding: 2rem;
+  }
+  .projects__card {
+    height: 450px;
+  }
+}
 
 @media (max-width: 375px) {
   section {
@@ -183,9 +204,6 @@
   }
   .navbar__max-width {
     margin: 0rem 3rem;
-  }
-  .nav__logo a {
-    font-size: 2rem;
   }
   .hero__title {
     width: 100%;
@@ -202,7 +220,7 @@
     text-align: center;
     justify-content: center;
     margin-top: 2rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
     display: flex;
     padding: 2rem;
   }
@@ -238,5 +256,23 @@
   }
   .foot__by h3 {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .projects__card {
+    height: 480px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    padding: 20px 10px;
+  }
+  .navbar__logo a {
+    font-size: 2rem;
+  }
+  .navbar__logo a strong {
+    font-size: 2rem;
   }
 }

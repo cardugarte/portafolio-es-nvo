@@ -15,10 +15,10 @@
   }
   &__card {
     max-width: calc(33% - 20px);
-    height: 420px;
+    height: 450px;
     text-align: center;
-    border-radius: 1rem;
-    padding: 1.5rem 3.5rem;
+    border-radius: 10px;
+    padding: 15px 35px;
     transition: all 0.3s ease;
     background-color: $color-secundario;
   }
@@ -37,27 +37,27 @@
   &__box {
     i {
       font-size: 6rem;
-      padding: 2rem;
+      padding: 20px;
       color: $color-light;
     }
     img {
-      padding: 2rem;
+      padding: 20px;
     }
     h3 {
       font-size: 2rem;
-      padding: 2rem;
+      padding: 20px;
       color: $color-primario;
     }
     p {
       height: 150px;
-      padding: 1rem;
+      padding: 10px;
     }
     a {
       display: inline-block;
       color: $color-light;
-      padding: 1rem;
-      margin: 1rem 1rem;
-      border-radius: 1rem;
+      padding: 10px;
+      margin: 10px 10px;
+      border-radius: 10px;
       border: 0.1rem solid $color-primario;
     }
     a:hover {
