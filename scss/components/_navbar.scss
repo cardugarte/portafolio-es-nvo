@@ -32,6 +32,10 @@
     display: inline-block;
     list-style: none;
   }
+  &__menu li a i {
+    color: $color-primario;
+    margin-right: 10px;
+  }
   &__menu li .menu-mobile {
     padding: 2px 15px;
     font-size: 2rem;
@@ -59,6 +63,14 @@
   li .menu-mobile:hover {
     transform: scale(1.05);
     color: $color-secundario;
+  }
+  .menu li a i {
+    color: $color-light;
+    transition: all 0.3s ease;
+  }
+  .menu li a:hover i {
+    color: $color-secundario;
+    transform: scale(1.05);
   }
 }
 

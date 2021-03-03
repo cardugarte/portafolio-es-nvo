@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
 }
 
+h5 {
+  font-weight: 400;
+  color: #fff;
+}
+
 .scroll-up-button {
   position: fixed;
   width: 44px;
@@ -128,6 +133,10 @@ section .title::after {
   display: inline-block;
   list-style: none;
 }
+.navbar__menu li a i {
+  color: #006600;
+  margin-right: 10px;
+}
 .navbar__menu li .menu-mobile {
   padding: 2px 15px;
   font-size: 2rem;
@@ -156,6 +165,14 @@ section .title::after {
 .navbar.sticky li .menu-mobile:hover {
   transform: scale(1.05);
   color: #002220;
+}
+.navbar.sticky .menu li a i {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .menu li a:hover i {
+  color: #002220;
+  transform: scale(1.05);
 }
 
 .cancel-btn i,
@@ -290,7 +307,7 @@ section .title::after {
 }
 .projects__card {
   max-width: calc(33% - 20px);
-  height: 450px;
+  height: auto;
   text-align: center;
   border-radius: 10px;
   padding: 15px 35px;
@@ -337,6 +354,9 @@ section .title::after {
 .projects__box a:hover {
   transform: scale(1.05);
   color: #002220;
+}
+.projects__tecnology i {
+  font-size: 25px;
 }
 
 .contact .title::after {
