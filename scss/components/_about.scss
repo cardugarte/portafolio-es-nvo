@@ -23,8 +23,13 @@
         margin-bottom: 10px;
       }
       .about__resumen {
-        text-decoration: underline;
-        text-decoration-color: $color-dark;
+        color: $color-primario;
+        letter-spacing: 2px;
+        line-height: 30px;
+        border: 1px solid $color-primario;
+        border-left: 5px solid $color-primario;
+        margin: 15px;
+        padding: 10px;
       }
       p {
         text-align: justify;

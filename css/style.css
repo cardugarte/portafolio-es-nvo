@@ -267,9 +267,13 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about__container .right .about__resumen {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #001111;
-          text-decoration-color: #001111;
+  color: #006600;
+  letter-spacing: 2px;
+  line-height: 30px;
+  border: 1px solid #006600;
+  border-left: 5px solid #006600;
+  margin: 15px;
+  padding: 10px;
 }
 .about__container .right p {
   text-align: justify;
