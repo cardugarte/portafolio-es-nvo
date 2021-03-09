@@ -362,6 +362,22 @@ section .title::after {
 .projects__tecnology i {
   font-size: 25px;
 }
+.projects__tecnology i:hover {
+  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+  transition: all 0.3s ease;
+}
+.projects__tecnology .fa-html5:hover {
+  color: orangered;
+}
+.projects__tecnology .fa-css3-alt:hover {
+  color: blue;
+}
+.projects__tecnology .fa-elementor:hover {
+  color: blueviolet;
+}
+.projects__tecnology .fa-sass:hover {
+  color: darksalmon;
+}
 
 .contact .title::after {
   content: "¿Hacemos equipo? 🙌🏽";

@@ -68,4 +68,22 @@
   &__tecnology i {
     font-size: 25px;
   }
+  &__tecnology i:hover {
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    transition: all 0.3s ease;
+  }
+  &__tecnology {
+    .fa-html5:hover {
+      color: orangered;
+    }
+    .fa-css3-alt:hover {
+      color: blue;
+    }
+    .fa-elementor:hover {
+      color: blueviolet;
+    }
+    .fa-sass:hover {
+      color: darksalmon;
+    }
+  }
 }
