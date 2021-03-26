@@ -46,7 +46,7 @@ h5 {
 .max-width {
   display: flex;
   max-width: 100%;
-  padding: 60px;
+  padding: 40px;
   margin: auto;
 }
 
@@ -184,7 +184,7 @@ section .title::after {
 }
 
 .hero {
-  display: flex;
+  display: block;
   height: 100vh;
   color: #fff;
   background-color: #001111;
@@ -198,6 +198,20 @@ section .title::after {
   width: 65%;
   display: inline-block;
   padding-top: 0;
+}
+.hero__tecnology--container {
+  display: flex;
+  min-height: 100px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.hero__tecnology--container i {
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+.hero__tecnology--container i:hover {
+  transform: scale(1.05);
+  color: #006600;
 }
 .hero__title {
   font-size: 5rem;
@@ -233,6 +247,8 @@ section .title::after {
 }
 .hero__button:hover {
   transform: scale(1.05);
+  background-color: #006600;
+  border-color: #fff;
 }
 .hero__pdf {
   margin-left: 10px;
@@ -283,7 +299,7 @@ section .title::after {
   display: inline-block;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  margin-top: 35px;
+  margin-top: 25px;
   padding: 10px 20px;
   border-radius: 10px;
   transition: all 0.3s ease;

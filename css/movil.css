@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 1039px) {
+  .hero__tecnology--container {
+    margin-top: 40px;
+  }
   .hero img {
     width: 340px;
   }
@@ -47,6 +50,9 @@
   }
   .hero .max-width {
     display: flex;
+  }
+  .hero__tecnology--container {
+    margin-top: 40px;
   }
   .hero img {
     display: flex;
@@ -164,6 +170,14 @@
   }
 }
 @media (max-width: 768px) {
+  .hero__button--container {
+    display: flex;
+    margin-top: 0;
+    justify-content: space-evenly;
+  }
+  .hero__tecnology--container i {
+    margin-top: 25px;
+  }
   .projects .projects__tecnology i {
     font-size: 5rem;
   }
@@ -214,6 +228,7 @@
 }
 @media (max-width: 470px) {
   .hero__button--container {
+    display: block;
     margin-top: 10px;
   }
   .hero__button {
@@ -239,6 +254,11 @@
   .navbar__max-width {
     margin: 0rem 3rem;
   }
+
+  .hero__tecnology--container i {
+    margin-top: 20px;
+    font-size: 25px;
+  }
   .hero__title {
     width: 100%;
     text-align: center;
@@ -253,10 +273,10 @@
   .hero__button {
     text-align: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     display: flex;
-    padding: 2rem;
+    padding: 1.5rem;
   }
   .about__container .right a {
     display: block;

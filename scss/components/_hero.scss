@@ -1,5 +1,5 @@
 .hero {
-  display: flex;
+  display: block;
   height: 100vh;
   color: $color-light;
   background-color: $color-dark;
@@ -12,6 +12,20 @@
     width: 65%;
     display: inline-block;
     padding-top: 0;
+  }
+  &__tecnology--container {
+    display: flex;
+    min-height: 100px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  &__tecnology--container i {
+    font-size: 40px;
+    transition: all 0.3s ease;
+  }
+  &__tecnology--container i:hover {
+    transform: scale(1.05);
+    color: $color-primario;
   }
   &__title {
     font-size: 5rem;
@@ -47,6 +61,8 @@
   }
   &__button:hover {
     transform: scale(1.05);
+    background-color: $color-primario;
+    border-color: $color-light;
   }
   &__pdf {
     margin-left: 10px;
